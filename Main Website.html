@@ -76,7 +76,26 @@
             background: rgba(255, 255, 255, 0.8);
         }
     </style>
+
 </head>
 <body>
     <div class="background"></div>
     <div class="container">
+            <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "Google") {
+                window.location.href = "Google.com";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Password Protected Page</h1>
+    <label for="password">Enter Password:</label>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">Unlock</button>
+</body>
+</html>
